@@ -16,8 +16,8 @@ export const AboutSection: React.FC = () => {
 
   const y = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
-  // Using a simple placeholder image
-  const profileImageUrl = "https://randomuser.me/api/portraits/men/40.jpg";
+  // Using the actual user's image
+  const profileImageUrl = "https://drive.google.com/uc?export=view&id=1OqKMzBtKCHNLcS9v7Uu3NTIhKC4mYLa_";
 
   const stats = [
     { 
@@ -92,7 +92,6 @@ export const AboutSection: React.FC = () => {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              {/* Regular image tag instead of ParallaxImage */}
               <img 
                 src={profileImageUrl}
                 alt="Profile photo" 
