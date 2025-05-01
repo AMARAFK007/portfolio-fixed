@@ -6,7 +6,6 @@ import { AnimatedText } from '../ui/AnimatedText';
 import { AnimatedCounter } from '../ui/AnimatedCounter';
 import { ParallaxImage } from '../ui/ParallaxImage';
 import { Button } from '../ui/Button';
-import profileImage from '../../assets/images/profile.jpg';
 
 export const AboutSection: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -16,6 +15,8 @@ export const AboutSection: React.FC = () => {
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [50, -50]);
+
+  const profileImageUrl = "https://i.imgur.com/DEv8oN6.jpg";
 
   const stats = [
     { 
@@ -91,7 +92,7 @@ export const AboutSection: React.FC = () => {
               viewport={{ once: true }}
             >
               <ParallaxImage 
-                src={profileImage}
+                src={profileImageUrl}
                 alt="Profile photo" 
                 className="w-full h-[450px] rounded-xl" 
                 speed={0.2}
