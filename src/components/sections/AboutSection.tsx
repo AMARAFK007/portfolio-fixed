@@ -16,8 +16,8 @@ export const AboutSection: React.FC = () => {
 
   const y = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
-  // Using the original image URL
-  const profileImageUrl = "https://i.ibb.co/jzd0Sd9/profile-pic.jpg";
+  // Using the postimg.cc URL for the profile image
+  const profileImageUrl = "https://i.postimg.cc/k5FKTn0n/1000049889.png";
 
   const stats = [
     { 
@@ -92,9 +92,10 @@ export const AboutSection: React.FC = () => {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <div 
-                className="w-full h-[450px] bg-gradient-to-br from-primary/20 to-secondary/20"
-                aria-label="Profile photo placeholder"
+              <img 
+                src={profileImageUrl}
+                alt="Profile photo" 
+                className="w-full h-[450px] object-cover rounded-xl" 
               />
             </motion.div>
             

@@ -9,8 +9,8 @@ export const HeroSection: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const shapesRef = useRef<HTMLDivElement>(null);
   
-  // Using the original image URL
-  const profileImageUrl = "https://i.ibb.co/jzd0Sd9/profile-pic.jpg";
+  // Using the postimg.cc URL for the profile image
+  const profileImageUrl = "https://i.postimg.cc/k5FKTn0n/1000049889.png";
   
   useEffect(() => {
     if (!shapesRef.current) return;
@@ -149,9 +149,10 @@ export const HeroSection: React.FC = () => {
             >
               <div className="w-full h-[400px] md:h-[500px] bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 rounded-xl border border-foreground/10 overflow-hidden backdrop-blur-sm">
                 <div className="w-full h-full flex items-center justify-center">
-                  <div 
-                    className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20"
-                    aria-label="Developer portrait placeholder"
+                  <img 
+                    src={profileImageUrl}
+                    alt="Developer portrait" 
+                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>
