@@ -9,8 +9,8 @@ export const HeroSection: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const shapesRef = useRef<HTMLDivElement>(null);
   
-  // Use a reliable CDN-hosted image URL
-  const profileImageUrl = "https://randomuser.me/api/portraits/women/44.jpg";
+  // Using the original image URL
+  const profileImageUrl = "https://i.ibb.co/jzd0Sd9/profile-pic.jpg";
   
   useEffect(() => {
     if (!shapesRef.current) return;
