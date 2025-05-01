@@ -9,6 +9,9 @@ export const HeroSection: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const shapesRef = useRef<HTMLDivElement>(null);
   
+  // Use a reliable CDN-hosted image URL
+  const profileImageUrl = "https://randomuser.me/api/portraits/women/44.jpg";
+  
   useEffect(() => {
     if (!shapesRef.current) return;
     
@@ -147,7 +150,7 @@ export const HeroSection: React.FC = () => {
               <div className="w-full h-[400px] md:h-[500px] bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 rounded-xl border border-foreground/10 overflow-hidden backdrop-blur-sm">
                 <div className="w-full h-full flex items-center justify-center">
                   <img 
-                    src="https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                    src={profileImageUrl}
                     alt="Developer portrait" 
                     className="w-full h-full object-cover"
                   />

@@ -16,8 +16,8 @@ export const AboutSection: React.FC = () => {
 
   const y = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
-  // Using the actual user's image
-  const profileImageUrl = "https://drive.google.com/uc?export=view&id=1OqKMzBtKCHNLcS9v7Uu3NTIhKC4mYLa_";
+  // Use a reliable CDN-hosted image URL
+  const profileImageUrl = "https://randomuser.me/api/portraits/women/44.jpg";
 
   const stats = [
     { 
