@@ -5,11 +5,16 @@
 [build.environment]
   NODE_VERSION = "18"
   NPM_FLAGS = "--no-audit --production=false"
+  NETLIFY_USE_YARN = "false"
+
+[build.processing]
+  skip_processing = false
+
+# Force Netlify to clear cache
+[build.environment.NETLIFY]
+  CLEAR_CACHE = "true"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[build.processing]
-  skip_processing = false
