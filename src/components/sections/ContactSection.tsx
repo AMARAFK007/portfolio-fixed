@@ -35,14 +35,14 @@ export const ContactSection: React.FC = () => {
     {
       icon: <Mail size={20} />,
       title: 'Email',
-      value: 'contact@example.com',
-      href: 'mailto:contact@example.com',
+      value: 'amarjitpradhan007@gmail.com',
+      href: 'mailto:amarjitpradhan007@gmail.com',
     },
     {
       icon: <Phone size={20} />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+91 8260258997',
+      href: 'tel:+918260258997',
     },
     {
       icon: <MapPin size={20} />,
