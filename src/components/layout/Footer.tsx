@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
     { icon: <Github size={20} />, href: 'https://github.com', label: 'GitHub' },
     { icon: <Twitter size={20} />, href: 'https://twitter.com', label: 'Twitter' },
     { icon: <Linkedin size={20} />, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <Mail size={20} />, href: 'mailto:contact@example.com', label: 'Email' },
+    { icon: <Mail size={20} />, href: 'mailto:amarjitpradhan007@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -88,10 +88,10 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-3">
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <address className="not-italic text-foreground/70 space-y-2">
-              <p>123 Developer Way</p>
-              <p>Web City, Digital State 10101</p>
-              <p>contact@example.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>Bhubaneswar</p>
+              <p>Odisha, India</p>
+              <p>amarjitpradhan007@gmail.com</p>
+              <p>+91 8260258997</p>
             </address>
           </div>
         </div>

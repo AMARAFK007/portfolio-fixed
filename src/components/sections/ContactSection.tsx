@@ -47,8 +47,8 @@ export const ContactSection: React.FC = () => {
     {
       icon: <MapPin size={20} />,
       title: 'Location',
-      value: 'New York, NY',
-      href: 'https://maps.google.com/?q=New+York',
+      value: 'Bhubaneswar, India',
+      href: 'https://maps.google.com/?q=Bhubaneswar+India',
     },
   ];
 
@@ -279,7 +279,7 @@ export const ContactSection: React.FC = () => {
             <div className="mt-12 relative overflow-hidden rounded-lg h-72 border border-foreground/10">
               <iframe
                 title="Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976397304603!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1617019587702!5m2!1sen!2suk"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120072.0393151985!2d85.76295414999998!3d20.300828349999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d2d5170aa5%3A0xfc580e2b68b33fa8!2sBhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1716622321114!5m2!1sen!2sin"
                 className="border-0 w-full h-full"
                 allowFullScreen={false}
                 loading="lazy"
