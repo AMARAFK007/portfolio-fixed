@@ -6,6 +6,7 @@ import { AnimatedText } from '../ui/AnimatedText';
 import { AnimatedCounter } from '../ui/AnimatedCounter';
 import { ParallaxImage } from '../ui/ParallaxImage';
 import { Button } from '../ui/Button';
+import profileImage from '../../assets/images/profile.jpg';
 
 export const AboutSection: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -90,8 +91,8 @@ export const AboutSection: React.FC = () => {
               viewport={{ once: true }}
             >
               <ParallaxImage 
-                src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Developer working" 
+                src={profileImage}
+                alt="Profile photo" 
                 className="w-full h-[450px] rounded-xl" 
                 speed={0.2}
               />
