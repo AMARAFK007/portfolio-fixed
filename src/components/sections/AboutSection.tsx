@@ -92,10 +92,9 @@ export const AboutSection: React.FC = () => {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <img 
-                src={profileImageUrl}
-                alt="Profile photo" 
-                className="w-full h-[450px] object-cover rounded-xl" 
+              <div 
+                className="w-full h-[450px] bg-gradient-to-br from-primary/20 to-secondary/20"
+                aria-label="Profile photo placeholder"
               />
             </motion.div>
             
