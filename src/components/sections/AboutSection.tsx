@@ -4,7 +4,7 @@ import { Award, Coffee, Users, Briefcase } from 'lucide-react';
 import { Section } from '../ui/Section';
 import { AnimatedText } from '../ui/AnimatedText';
 import { AnimatedCounter } from '../ui/AnimatedCounter';
-import { ParallaxImage } from '../ui/ParallaxImage';
+// import { ParallaxImage } from '../ui/ParallaxImage';
 import { Button } from '../ui/Button';
 
 export const AboutSection: React.FC = () => {
@@ -16,7 +16,8 @@ export const AboutSection: React.FC = () => {
 
   const y = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
-  const profileImageUrl = "https://i.imgur.com/DEv8oN6.jpg";
+  // Using a simple placeholder image
+  const profileImageUrl = "https://randomuser.me/api/portraits/men/40.jpg";
 
   const stats = [
     { 
@@ -91,11 +92,11 @@ export const AboutSection: React.FC = () => {
               transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <ParallaxImage 
+              {/* Regular image tag instead of ParallaxImage */}
+              <img 
                 src={profileImageUrl}
                 alt="Profile photo" 
-                className="w-full h-[450px] rounded-xl" 
-                speed={0.2}
+                className="w-full h-[450px] object-cover rounded-xl" 
               />
             </motion.div>
             
