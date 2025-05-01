@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { Send, Mail, Phone, MapPin, AlertCircle } from 'lucide-react';
@@ -6,6 +6,7 @@ import { Section } from '../ui/Section';
 import { AnimatedText } from '../ui/AnimatedText';
 import { Button } from '../ui/Button';
 import { useCursorStore } from '../../store/cursorStore';
+import emailjs from '@emailjs/browser';
 
 type FormData = {
   name: string;
@@ -16,6 +17,7 @@ type FormData = {
 
 export const ContactSection: React.FC = () => {
   const { setCursorType } = useCursorStore();
+  const formRef = useRef<HTMLFormElement>(null);
   const { 
     register, 
     handleSubmit, 
@@ -24,11 +26,27 @@ export const ContactSection: React.FC = () => {
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    console.log('Form submitted:', data);
-    reset();
-    alert('Message sent successfully! I will get back to you soon.');
+    if (!formRef.current) return;
+    
+    try {
+      // Initialize EmailJS with your public key
+      emailjs.init("qbBbdkP7qJDo3b_Ts");
+      
+      // Send the email using EmailJS
+      const result = await emailjs.sendForm(
+        "service_cmwwacj",
+        "template_c1c7jnb",
+        formRef.current,
+        "qbBbdkP7qJDo3b_Ts"
+      );
+      
+      console.log('Email successfully sent!', result.text);
+      reset();
+      alert('Message sent successfully! I will get back to you soon.');
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      alert('Failed to send message. Please try again later.');
+    }
   };
 
   const contactInfo = [
@@ -98,7 +116,7 @@ export const ContactSection: React.FC = () => {
           >
             <h3 className="text-2xl font-bold mb-6">Send Me a Message</h3>
             
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div>
                 <label 
                   htmlFor="name" 
