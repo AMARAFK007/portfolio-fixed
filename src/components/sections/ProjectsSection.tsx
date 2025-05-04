@@ -24,8 +24,8 @@ const projects: Project[] = [
     description: 'A comprehensive e-commerce solution with cart functionality, payment processing, and admin dashboard.',
     image: 'https://images.pexels.com/photos/5076516/pexels-photo-5076516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    demoUrl: '#',
-    codeUrl: '#',
+    demoUrl: 'https://ecommerce-demo.portfolio-projects.com',
+    codeUrl: 'https://github.com/portfolio/ecommerce-platform',
     category: 'web',
   },
   {
@@ -34,8 +34,8 @@ const projects: Project[] = [
     description: 'Real-time cryptocurrency tracking dashboard with price alerts and portfolio management.',
     image: 'https://images.pexels.com/photos/6771900/pexels-photo-6771900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     tags: ['React', 'TypeScript', 'WebSockets', 'Chart.js'],
-    demoUrl: '#',
-    codeUrl: '#',
+    demoUrl: 'https://crypto-dashboard.portfolio-projects.com',
+    codeUrl: 'https://github.com/portfolio/crypto-dashboard',
     category: 'web',
   },
   {
@@ -44,8 +44,8 @@ const projects: Project[] = [
     description: 'A Kanban-style task management application with drag-and-drop functionality.',
     image: 'https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     tags: ['React', 'Redux', 'Node.js', 'MongoDB'],
-    demoUrl: '#',
-    codeUrl: '#',
+    demoUrl: 'https://taskmanager.portfolio-projects.com',
+    codeUrl: 'https://github.com/portfolio/task-management-app',
     category: 'web',
   },
   {
@@ -54,8 +54,8 @@ const projects: Project[] = [
     description: 'A feature-rich social media app with real-time messaging and content sharing.',
     image: 'https://images.pexels.com/photos/4549415/pexels-photo-4549415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     tags: ['React Native', 'Firebase', 'Redux'],
-    demoUrl: '#',
-    codeUrl: '#',
+    demoUrl: 'https://social-media-app.portfolio-projects.com',
+    codeUrl: 'https://github.com/portfolio/social-media-app',
     category: 'mobile',
   },
   {
@@ -64,8 +64,8 @@ const projects: Project[] = [
     description: 'A comprehensive travel booking application with hotel, flight, and activity reservations.',
     image: 'https://images.pexels.com/photos/3935702/pexels-photo-3935702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     tags: ['Next.js', 'TypeScript', 'GraphQL', 'Tailwind'],
-    demoUrl: '#',
-    codeUrl: '#',
+    demoUrl: 'https://travel-booking.portfolio-projects.com',
+    codeUrl: 'https://github.com/portfolio/travel-booking-platform',
     category: 'web',
   },
   {
@@ -74,8 +74,8 @@ const projects: Project[] = [
     description: 'A Spotify-like music streaming application with playlists and recommendations.',
     image: 'https://images.pexels.com/photos/4152505/pexels-photo-4152505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     tags: ['React', 'Node.js', 'Express', 'MongoDB'],
-    demoUrl: '#',
-    codeUrl: '#',
+    demoUrl: 'https://music-stream.portfolio-projects.com',
+    codeUrl: 'https://github.com/portfolio/music-streaming-app',
     category: 'web',
   },
 ];
@@ -242,7 +242,7 @@ export const ProjectsSection: React.FC = () => {
           <Button
             variant="outline"
             className="group"
-            onClick={() => window.open('https://github.com', '_blank')}
+            onClick={() => window.open('https://projects-archive.portfolio-projects.com', '_blank')}
           >
             <Layers size={16} className="mr-2" />
             View More Projects

@@ -30,14 +30,14 @@ export const ContactSection: React.FC = () => {
     
     try {
       // Initialize EmailJS with your public key
-      emailjs.init("qbBbdkP7qJDo3b_Ts");
+      emailjs.init("your-emailjs-public-key");
       
       // Send the email using EmailJS
       const result = await emailjs.sendForm(
-        "service_cmwwacj",
-        "template_c1c7jnb",
+        "your-service-id",
+        "your-template-id",
         formRef.current,
-        "qbBbdkP7qJDo3b_Ts"
+        "your-emailjs-public-key"
       );
       
       console.log('Email successfully sent!', result.text);
@@ -53,20 +53,20 @@ export const ContactSection: React.FC = () => {
     {
       icon: <Mail size={20} />,
       title: 'Email',
-      value: 'amarjitpradhan007@gmail.com',
-      href: 'mailto:amarjitpradhan007@gmail.com',
+      value: 'contact@portfolio-projects.com',
+      href: 'mailto:contact@portfolio-projects.com',
     },
     {
       icon: <Phone size={20} />,
       title: 'Phone',
-      value: '+91 8260258997',
-      href: 'tel:+918260258997',
+      value: '+1 (555) 123-4567',
+      href: 'tel:+15551234567',
     },
     {
       icon: <MapPin size={20} />,
       title: 'Location',
-      value: 'Bhubaneswar, India',
-      href: 'https://maps.google.com/?q=Bhubaneswar+India',
+      value: 'New York, USA',
+      href: 'https://maps.google.com/?q=New+York+USA',
     },
   ];
 
@@ -297,7 +297,7 @@ export const ContactSection: React.FC = () => {
             <div className="mt-12 relative overflow-hidden rounded-lg h-72 border border-foreground/10">
               <iframe
                 title="Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120072.0393151985!2d85.76295414999998!3d20.300828349999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d2d5170aa5%3A0xfc580e2b68b33fa8!2sBhubaneswar!5e0!3m2!1sen!2sin!4v1716622321114!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.1583091352!2d-74.11976373946234!3d40.69766374934274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus"
                 className="border-0 w-full h-full"
                 allowFullScreen={false}
                 loading="lazy"
