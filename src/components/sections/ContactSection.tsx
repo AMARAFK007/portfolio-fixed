@@ -53,20 +53,20 @@ export const ContactSection: React.FC = () => {
     {
       icon: <Mail size={20} />,
       title: 'Email',
-      value: 'contact@portfolio-projects.com',
-      href: 'mailto:contact@portfolio-projects.com',
+      value: 'amarjitpradhan007@gmail.com',
+      href: 'mailto:amarjitpradhan007@gmail.com',
     },
     {
       icon: <Phone size={20} />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+91 8260258997',
+      href: 'tel:+918260258997',
     },
     {
       icon: <MapPin size={20} />,
       title: 'Location',
-      value: 'New York, USA',
-      href: 'https://maps.google.com/?q=New+York+USA',
+      value: 'Bhubaneswar, India',
+      href: 'https://maps.google.com/?q=Bhubaneswar+India',
     },
   ];
 
@@ -297,7 +297,7 @@ export const ContactSection: React.FC = () => {
             <div className="mt-12 relative overflow-hidden rounded-lg h-72 border border-foreground/10">
               <iframe
                 title="Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.1583091352!2d-74.11976373946234!3d40.69766374934274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1651234567890!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119811.46049550933!2d85.7435198671093!3d20.301177200631506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190908dd8c0777%3A0x73e088aa5b662ede!2sBhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1716123456789!5m2!1sen!2sin"
                 className="border-0 w-full h-full"
                 allowFullScreen={false}
                 loading="lazy"
